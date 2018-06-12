@@ -1,6 +1,9 @@
-- name: Install htop
-  package: >
-    name={{ item }}
-    state=latest
+- name: Install system packages
+  package:
+    name: "{{ item }}"
+    state: latest
   with_items:
     - htop
+    - libselinux-python
+    - libsemanage-python
+

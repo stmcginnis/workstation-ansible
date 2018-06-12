@@ -1,0 +1,6 @@
+- name: Install python packages
+  pip:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - git-review
