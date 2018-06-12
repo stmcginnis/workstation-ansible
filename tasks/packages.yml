@@ -1,0 +1,6 @@
+- name: Install htop
+  package: >
+    name={{ item }}
+    state=latest
+  with_items:
+    - htop

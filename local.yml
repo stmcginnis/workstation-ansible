@@ -1,7 +1,5 @@
 - hosts: localhost
   become: true
+
   tasks:
-  - name: Install htop
-    package: >
-      name=htop
-      state=latest
+    - include: tasks/packages.yml
