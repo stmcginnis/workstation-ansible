@@ -6,10 +6,10 @@
 
 - name: Make sure user account is present
   user:
-    name: smcginnis
-    comment: Sean McGinnis
+    name: "{{ username }}"
+    comment: "{{ git_user_name }}"
     shell: /bin/bash
-    group: smcginnis
+    group: "{{ username }}"
     state: present
 
 - name: Enable sudo for user account
