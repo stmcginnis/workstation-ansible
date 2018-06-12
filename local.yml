@@ -6,3 +6,4 @@
     - include: tasks/users.yml
     - include: tasks/cron.yml
     - include: tasks/pip.yml
+    - include: tasks/git.yml
