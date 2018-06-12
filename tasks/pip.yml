@@ -1,6 +1,16 @@
-- name: Install python packages
+- name: Install python2 packages
   pip:
     name: "{{ item }}"
     state: latest
   with_items:
     - git-review
+    - tox
+  executable: pip2
+
+- name: Install python3 packages
+  pip:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - tox
+  executable: pip3

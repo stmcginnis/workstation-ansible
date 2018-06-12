@@ -6,4 +6,12 @@
     - htop
     - libselinux-python
     - libsemanage-python
-
+    - gimp
+    - gcc
+    - python-virtualenv
+    - openssl-devel
+    - gcc
+    - libffi-devel
+    - libxslt-devel
+    - mysql-devel
+    - python35
