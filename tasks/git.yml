@@ -1,6 +1,4 @@
 - name: Set git global config
-  become: yes
-  become_user: "{{ username }}"
   git_config:
     name: "{{ item.name }}"
     scope: global

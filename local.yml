@@ -6,4 +6,8 @@
     - include: tasks/users.yml
     - include: tasks/cron.yml
     - include: tasks/pip.yml
-    - include: tasks/git.yml
+    - name: Executing user-specific operations
+      block:
+      - include: tasks/git.yml
+      become: yes
+      become_user: "{{ username }}"
