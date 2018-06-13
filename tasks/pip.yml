@@ -2,15 +2,16 @@
   pip:
     name: "{{ item }}"
     state: latest
+    executable: pip2
   with_items:
     - git-review
     - tox
-  executable: pip2
 
 - name: Install python3 packages
   pip:
     name: "{{ item }}"
     state: latest
+    executable: pip3
   with_items:
+    - git-review
     - tox
-  executable: pip3
