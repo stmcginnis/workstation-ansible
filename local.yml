@@ -6,6 +6,12 @@
     - include: tasks/users.yml
     - include: tasks/cron.yml
     - include: tasks/pip.yml
+
+    - name: Desktop settings
+      block:
+      - include: tasks/desktop-packages.yml
+      when: is_desktop
+
     - name: Executing user-specific operations
       block:
       - include: tasks/git.yml

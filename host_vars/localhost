@@ -3,3 +3,4 @@ username: smcginnis
 git_user_email: "sean.mcginnis@gmail.com"
 git_user_name: "Sean McGinnis"
 git_review_name: SeanM
+is_desktop: False

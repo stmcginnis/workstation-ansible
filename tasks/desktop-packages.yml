@@ -1,0 +1,7 @@
+- name: Install desktop system packages
+  package:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - gimp
+    - chromium
