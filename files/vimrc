@@ -1,0 +1,23 @@
+syntax enable
+
+set number
+set incsearch
+set hlsearch
+set showmatch
+
+set colorcolumn=80
+set textwidth=79
+
+set ignorecase
+set smartcase
+
+set backspace=indent,eol,start
+set autoindent
+
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
+set cursorline
+
+set noswapfile

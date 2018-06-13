@@ -16,5 +16,6 @@
     - name: Executing user-specific operations
       block:
       - include: tasks/git.yml
+      - include: tasks/vim.yml
       become: yes
       become_user: "{{ username }}"
