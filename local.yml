@@ -6,6 +6,7 @@
     - include: tasks/users.yml
     - include: tasks/cron.yml
     - include: tasks/pip.yml
+    - include: tasks/powerline.yml
 
     - name: Desktop settings
       block:

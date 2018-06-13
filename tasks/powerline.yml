@@ -1,0 +1,29 @@
+---
+- include_vars: "{{ ansible_os_family|lower }}.yml"
+
+- name: Install powerline packages
+  package:
+    name: "{{ item }}"
+  with_items: "{{ powerline_packages }}"
+
+- name: Install powerline script
+  template:
+    src: powerline.sh.j2
+    dest: /etc/bash_powerline.sh
+
+- name: Set powerline theme
+  lineinfile:
+    dest: "{{ powerline_config_file }}"
+    line: "\t\t\"default_top_theme\": \"powerline\","
+    regexp: "default_top_theme"
+    insertbefore: "term_truecolor"
+
+- name: Configure powerline shell
+  template:
+    src: powerline-shell.json.j2
+    dest: "{{ powerline_themes_directory }}/shell/default.json"
+
+- name: Configure powerline tmux
+  template:
+    src: powerline-tmux.json.j2
+    dest: "{{ powerline_themes_directory }}/tmux/default.json"
