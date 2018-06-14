@@ -1,0 +1,16 @@
+system_packages:
+  - htop
+  - gcc
+  - libssl-dev
+  - libffi-dev
+  - libxslt-dev
+  - libmysqlclient-dev
+  - python2
+  - python35
+  - python-virtualenv
+  - python3-virtualenv
+  - python-pip
+  - python3-pip
+  - irssi
+  - mutt
+  - vim-enhanced

@@ -1,19 +1,7 @@
+- include_vars: "{{ ansible_os_family|lower }}-packages.yml"
+
 - name: Install system packages
   package:
     name: "{{ item }}"
     state: latest
-  with_items:
-    - htop
-    - libselinux-python
-    - libsemanage-python
-    - gcc
-    - python-virtualenv
-    - openssl-devel
-    - gcc
-    - libffi-devel
-    - libxslt-devel
-    - mysql-devel
-    - python35
-    - irssi
-    - mutt
-    - vim-enhanced
+  with_items: "{{ system_packages }}"
