@@ -7,3 +7,14 @@
   git:
     repo: https://github.com/VundleVim/Vundle.vim.git
     dest: ~/.vim/bundle/Vundle.vim
+
+- name: Enable vundle plugins
+  shell: vim +PluginInstall +qall
+
+- name: Alias vi to vim
+  lineinfile:
+    dest: "~/.bash_aliases"
+    create: yes
+    mode: 0644
+    line: "alias vi='vim'"
+    regexp: "^alias vi="
