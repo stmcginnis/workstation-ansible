@@ -17,3 +17,5 @@ system_packages:
   - irssi                                                                     
   - mutt                                                                      
   - vim-enhanced
+  - strace
+  - tree
