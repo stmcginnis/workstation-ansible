@@ -19,3 +19,4 @@ system_packages:
   - vim-enhanced
   - strace
   - tree
+  - meld

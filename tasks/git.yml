@@ -11,3 +11,5 @@
     - { name: "push.default", value: "simple" }
     - { name: "color.ui", value: "auto" }
     - { name: "hub.protocol", value: "ssh" }
+    - { name: "diff.tool", value: "meld" }
+    - { name: "difftool.prompt": value: "false" }
