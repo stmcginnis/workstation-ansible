@@ -13,6 +13,7 @@ filetype plugin indent on
 syntax enable
 
 set number
+set relativenumber
 set incsearch
 set hlsearch
 set showmatch
