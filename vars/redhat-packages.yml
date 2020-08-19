@@ -1,21 +1,21 @@
 system_packages:
-  - htop                                                                      
-  - gcc                                                                       
-  - libselinux-python                                                         
-  - libsemanage-python                                                        
-  - python-virtualenv                                                         
-  - openssl-devel                                                             
-  - libffi-devel                                                              
-  - libxslt-devel                                                             
-  - mysql-devel                                                               
+  - htop
+  - gcc
+  - libselinux-python
+  - libsemanage-python
+  - python-virtualenv
+  - openssl-devel
+  - libffi-devel
+  - libxslt-devel
+  - mysql-devel
   - python2
-  - python35                                                                  
+  - python3
   - python-pip
   - python3-pip
   - python-virtualenv
   - python3-virtualenv
-  - irssi                                                                     
-  - mutt                                                                      
+  - irssi
+  - mutt
   - vim-enhanced
   - strace
   - tree
