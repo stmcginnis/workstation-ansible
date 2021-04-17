@@ -13,7 +13,6 @@ system_packages:
   - python3-virtualenv
   - irssi
   - mutt
-  - vim-enhanced
   - strace
   - tree
   - meld

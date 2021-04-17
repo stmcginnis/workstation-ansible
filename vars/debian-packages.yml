@@ -10,7 +10,6 @@ system_packages:
   - python3-pip
   - irssi
   - mutt
-  - vim-enhanced
   - strace
   - tree
   - meld
