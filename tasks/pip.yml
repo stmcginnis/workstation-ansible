@@ -1,8 +1,5 @@
 - name: Install python3 packages
   pip:
-    name: "{{ item }}"
+    name: ['git-review', 'tox']
     state: latest
     executable: pip3
-  with_items:
-    - git-review
-    - tox

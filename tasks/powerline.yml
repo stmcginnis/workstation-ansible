@@ -3,8 +3,7 @@
 
 - name: Install powerline packages
   package:
-    name: "{{ item }}"
-  with_items: "{{ powerline_packages }}"
+    name: "{{ powerline_packages }}"
 
 - name: Install powerline script
   template:
