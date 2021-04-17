@@ -13,3 +13,4 @@ system_packages:
   - strace
   - tree
   - meld
+  - vim
